@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqurate Gaming And Home Furniture Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="container">
+       <div class="navbar">
+           <img src="images/logo 3.svg" class="logo" width="50px">
+           <nav class="nav">
+               <ul id="menuList">
+                   <li><a href="#">Game Controllers</a></li>
+                   <li><a href="#">VR Accessories</a></li>
+                   <li><a href="#">Home Furniture</a></li>
+                   <li><a href="#">Flat Screen TVs</a></li>
+               </ul>
+           </nav>
+           <img src="images/menu93.svg" class="menu-icon" width="50px" onclick="togglemenu()">
+       </div>
+       <div class="row">
+           <div class="col-1">
+            <h2>Xbox 360 Controllers <br> Dualshock 4</h2>
+            <h3>Wireless Controller for <br> Playstation 4</h3>
+            <p>(Compatible/Generic)</p>
+            <h4>100,00,00 Shs.</h4>
+            <button class="btn" type="button">Buy Now<img src="images/arrow2.svg" alt="" width="65px"></button>
+           </div>
+           <div class="col-2">
+               <img src="images/xbox.jpg" width="500px" class="controller">
+              </div>
+       </div>
+       <div class="social-links">
+           <img src="images/facebook-f.svg" alt="">
+           <img src="images/twitter.svg" alt="">
+           <img src="images/instagram.svg" alt="">
+       </div>
+   </div>
+
+     <script>
+         var menuList = document.getElementById("menuList");
+         menuList.style.maxHeight = "0px";
+         function togglemenu(){
+             if(menuList.style.maxHeight == "0px")
+             {
+                 menuList.style.maxHeight = "130px";
+             }
+             else{
+              menuList.style.maxHeight = "0px";
+             }
+         }
+     </script>
+
+</body>
+</html>
